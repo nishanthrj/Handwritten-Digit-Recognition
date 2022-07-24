@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@200;300;400;500;600;700;900&display=swap')
+
+*
+	padding: 0
+	margin: 0
+	box-sizing: border-box
+
+html
+	font-family: 'Overpass', sans-serif
+
+.content
+	
+.title
+	color: #282f3a
+	font-weight: 900
+	margin-top: 5rem 
+	font-size: 3rem
+	text-align: center
+
+.subtitle
+	color: #282f3a
+	font-size: 19px
+	text-align: center
+	font-weight: 300
+
+
+.upload-container
+	padding: 2rem
+	min-height: 18.75rem
+	max-width: 50rem
+	margin: 2rem auto
+	background: #fff
+	box-shadow: 0 3px 24px rgba(0,0,0,.08)
+	border-radius: 4px
+
+	.upload
+		background: rgba(239, 238, 243, 0.9)
+		border-radius: 5px
+		display: flex
+		justify-content: center
+		align-items: center
+		border: 3px dashed #bec0da
+		padding: 10rem
+
+		button
+			font-family: 'Overpass', sans-serif
+			width: 15rem
+			height: 4rem
+			text-align: center
+			font-size: 1.5rem
+			background: #727cf5
+			color: #f3f3f3
+			font-weight: 600
+			box-shadow: 0 10px 20px rgba(78,132,253,.4)
+			display: flex
+			align-items: center
+			justify-content: center
+			transition: .3s
+			border-radius: .5rem
+			cursor: pointer
+			outline: none
+			border: none
+
+			&:hover
+				background: #5d67cc
+
+			svg
+				width: 2rem
+				height: 2rem
+
+			span
+				margin-top: 0.25rem
+
+
+.prediction
+	&-container
+		padding: 2rem
+		min-height: 18.75rem
+		max-width: 53rem
+		margin: 2rem auto
+		background: #fff
+		box-shadow: 0 3px 24px rgba(0,0,0,.08)
+		border-radius: 4px
+		display: flex
+		column-gap: 1rem
+
+	&__image, &__value
+		background: rgba(239, 238, 243, 0.9)
+		border-radius: 5px
+		display: flex
+		justify-content: center
+		align-items: center
+		border: 3px dashed #bec0da
+		width: 50%
+		height: 25rem
+
+
+	&__image
+		img
+			height: 8rem
+			weight: 8rem
+
+	&__value
+		display: flex
+		flex-direction: column
+
+		&__digit
+			font-size: 10rem
+			font-weight: 900
+
+		&__percent
+			font-size: 2rem
+			margin-left: 1rem
+
+
+.other-prediction
+	&-container
+		display: flex
+		width: 100%
+		margin: 2rem auto
+		justify-content: space-evenly
+
+	&__value
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+
+		&__digit
+			font-size: 3rem
+			font-weight: 900
+
+		&__percent
+			font-size: 1.5rem
+			margin-left: 1rem
