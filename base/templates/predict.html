@@ -1,0 +1,29 @@
+{% extends 'base.html' %} 
+{% load static %}
+{% block content %}
+	<div class="content">
+		<div class="prediction">
+			<h3 class="title">Prediction</h3>
+			<div class="prediction-container">
+				<div class="prediction__image">
+					<img src="{% static 'data/'%}{{img}}" alt="" srcset="" />
+				</div>
+				<div class="prediction__value">
+					<h1 class="prediction__value__digit">{{best.0}}</h1>
+					<h3 class="prediction__value__percent">{{best.1}}%</h3>
+				</div>
+			</div>
+		</div>
+		<div class="other-prediction">
+			<h3 class="title">Other Predictions</h3>
+			<div class="other-prediction-container">
+				{% for x in others %}
+				<div class="other-prediction__value">
+					<h2 class="other-prediction__value__digit">{{x.0}}</h2>
+					<h4 class="other-prediction__value__percent">{{x.1}}%</h4>
+				</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+{% endblock %}
