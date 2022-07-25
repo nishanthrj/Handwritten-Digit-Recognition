@@ -8,12 +8,10 @@
 html
 	font-family: 'Overpass', sans-serif
 
-.content
-	
 .title
 	color: #282f3a
 	font-weight: 900
-	margin-top: 5rem 
+	margin-top: 5rem
 	font-size: 3rem
 	text-align: center
 
@@ -22,7 +20,6 @@ html
 	font-size: 19px
 	text-align: center
 	font-weight: 300
-
 
 .upload-container
 	padding: 2rem
@@ -71,7 +68,6 @@ html
 			span
 				margin-top: 0.25rem
 
-
 .prediction
 	&-container
 		padding: 2rem
@@ -82,7 +78,7 @@ html
 		box-shadow: 0 3px 24px rgba(0,0,0,.08)
 		border-radius: 4px
 		display: flex
-		column-gap: 1rem
+		gap: 1rem
 
 	&__image, &__value
 		background: rgba(239, 238, 243, 0.9)
@@ -93,7 +89,6 @@ html
 		border: 3px dashed #bec0da
 		width: 50%
 		height: 25rem
-
 
 	&__image
 		img
@@ -112,13 +107,14 @@ html
 			font-size: 2rem
 			margin-left: 1rem
 
-
 .other-prediction
 	&-container
 		display: flex
 		width: 100%
 		margin: 2rem auto
 		justify-content: space-evenly
+		gap: 1rem
+		flex-flow: wrap
 
 	&__value
 		display: flex
@@ -133,3 +129,25 @@ html
 		&__percent
 			font-size: 1.5rem
 			margin-left: 1rem
+
+
+
+@media screen and (max-width: 48rem)
+	html
+		font-size: 12px 
+	
+
+@media screen and (max-width: 26.5rem)
+	html
+		font-size: 10px
+
+	.prediction
+		display: flex
+		flex-direction: column
+
+		&-container
+			flex-direction: column
+			width: 80%
+
+		&__image, &__value
+			width: 100%
