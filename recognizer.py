@@ -9,11 +9,11 @@ def random_name_generator(n):
 	return ''.join(random.choices(string.ascii_uppercase + string.digits, k=n))
 
 def recognize(image):
-	model=load_model(Path("./models/mnistCNN.h5"))
+	model=load_model(Path("./model/mnistCNN.h5"))
 
 	img = Image.open(image).convert("L")
 	img_name = random_name_generator(10) + '.jpg'
-	img.save(Path(f"./base/static/data/{img_name}"))
+	img.save(Path(f"./static/data/{img_name}"))
 	img = ImageOps.grayscale(img)
 	img = ImageOps.invert(img)
 	img = img.resize((28, 28))
@@ -26,6 +26,5 @@ def recognize(image):
 	values = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 	pred = list(zip(values, others))
 	best = pred.pop(best)
- 
 
 	return best, pred, img_name

@@ -1,12 +1,12 @@
 {% extends 'base.html' %} 
-{% load static %}
+
 {% block content %}
 	<div class="content">
 		<div class="prediction">
 			<h3 class="title">Prediction</h3>
 			<div class="prediction-container">
 				<div class="prediction__image">
-					<img src="{% static 'data/'%}{{img}}" alt="" srcset="" />
+					<img src="{{url_for('static',filename='data/')}}{{img_name}}" alt="Data" srcset="" />
 				</div>
 				<div class="prediction__value">
 					<h1 class="prediction__value__digit">{{best.0}}</h1>

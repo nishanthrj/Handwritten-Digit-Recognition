@@ -6,8 +6,7 @@
 
 		<div class="upload-container">
 			<div class="upload">
-				<form id="upload-form" action="/predict/" method="post" enctype="multipart/form-data">
-					{% csrf_token %}
+				<form id="upload-form" action="/predict" method="post" enctype="multipart/form-data">
 					<input id="file-field" type="file" name="image" required hidden />
 					<button id="submit-btn">
 						<i data-feather="file-plus"></i>&nbsp;&nbsp;<span>Select File</span>

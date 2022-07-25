@@ -1,1 +1,1 @@
-web: gunicorn digit_recognizer.wsgi --log-file -
+web: gunicorn app:app
