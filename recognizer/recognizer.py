@@ -4,15 +4,17 @@ import numpy as np
 from pathlib import Path
 import random
 import string
+import os
 
 def random_name_generator(n):
 	return ''.join(random.choices(string.ascii_uppercase + string.digits, k=n))
 
 def recognize(image):
 	model=load_model(Path("./model/mnistCNN.h5"))
-
 	img = Image.open(image).convert("L")
 	img_name = random_name_generator(10) + '.jpg'
+	if not os.path.exists(f"./static/data/"): 
+		os.mkdir(os.path.join('./static/', 'data'))
 	img.save(Path(f"./static/data/{img_name}"))
 	img = ImageOps.grayscale(img)
 	img = ImageOps.invert(img)
