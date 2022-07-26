@@ -1,5 +1,5 @@
 from flask import Flask,render_template,request
-from .recognizer import recognize
+from recognizer.recognizer import recognize
 
 app=Flask(__name__)
 
