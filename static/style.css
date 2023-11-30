@@ -7,28 +7,29 @@
 
 html {
   font-family: "Overpass", sans-serif;
+  font-size: 12px;
 }
 
 .title {
   color: #282f3a;
   font-weight: 900;
-  margin-top: 5rem;
-  font-size: 3rem;
+  margin-top: 6.25rem;
+  font-size: 4rem;
   text-align: center;
 }
 
 .subtitle {
   color: #282f3a;
-  font-size: 19px;
+  font-size: 15px;
   text-align: center;
-  font-weight: 300;
+  font-weight: 600;
 }
 
 .upload-container {
-  padding: 2rem;
+  padding: 2.75rem;
   min-height: 18.75rem;
-  max-width: 50rem;
-  margin: 2rem auto;
+  max-width: 65rem;
+  margin: 2.75rem auto;
   background: #fff;
   box-shadow: 0 3px 24px rgba(0, 0, 0, 0.08);
   border-radius: 4px;
@@ -40,14 +41,14 @@ html {
   justify-content: center;
   align-items: center;
   border: 3px dashed #bec0da;
-  padding: 10rem;
+  padding: 13.5rem;
 }
 .upload-container .upload button {
   font-family: "Overpass", sans-serif;
-  width: 15rem;
-  height: 4rem;
+  width: 20rem;
+  height: 5.1rem;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 2rem;
   background: #727cf5;
   color: #f3f3f3;
   font-weight: 600;
@@ -65,13 +66,16 @@ html {
   background: #5d67cc;
 }
 .upload-container .upload button svg {
-  width: 2rem;
-  height: 2rem;
+  width: 2.75rem;
+  height: 2.75rem;
 }
 .upload-container .upload button span {
   margin-top: 0.25rem;
 }
 
+.prediction .title {
+  margin-top: 2.5rem;
+}
 .prediction-container {
   padding: 2rem;
   min-height: 18.75rem;
@@ -133,11 +137,6 @@ html {
   margin-left: 1rem;
 }
 
-@media screen and (max-width: 48rem) {
-  html {
-    font-size: 12px;
-  }
-}
 @media screen and (max-width: 26.5rem) {
   html {
     font-size: 10px;
