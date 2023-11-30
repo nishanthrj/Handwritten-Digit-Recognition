@@ -23,6 +23,7 @@ Pillow==10.1.0
 Pygments==2.17.2
 rich==13.7.0
 sympy==1.12
-torch==2.1.1
 typing_extensions==4.8.0
 Werkzeug==3.0.1
+-f https://download.pytorch.org/whl/torch_stable.html
+torch==2.1.1+cpu
